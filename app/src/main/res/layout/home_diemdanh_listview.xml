@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="@dimen/cardview_horizontal_margin"
+    android:paddingRight="@dimen/cardview_horizontal_margin"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvHomeMonDd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/textcardviewDen"
+        android:textSize="@dimen/subtitleCardView"
+        android:text="TextView" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tvHomeMonDdvang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/textcardviewDen"
+            android:textSize="@dimen/desCardView" />
+
+        <TextView
+            android:id="@+id/tvHomeMonDdTongSo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:gravity="right"
+            android:paddingBottom="5dp"
+            android:textColor="@color/textcardviewDen"
+            android:textSize="@dimen/desCardView" />
+
+    </LinearLayout>
+</LinearLayout>

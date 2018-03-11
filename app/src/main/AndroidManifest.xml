@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hieudev.polystudentsolution">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".App.MyApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".ViewActivity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewActivity.ChooseCampusActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dialog.LoginGoogleDialog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HandleActivity.GetDataActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Dialog.DiemDanhDialog" />
+        <activity android:name=".Dialog.DiemDanhChiTiet" />
+        <activity android:name=".Dialog.DiemTheoKyDialog" />
+        <activity android:name=".Dialog.DiemTheoKyChiTietDialog" />
+        <activity android:name=".Dialog.DiemTheoMonDialog" />
+        <activity
+            android:name=".ViewActivity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dialog.SetThongTinMonDangHoc"
+            android:theme="@style/MyCustomDialog" />
+        <activity android:name=".ViewActivity.MonDangHocActivity" />
+        <activity android:name=".Dialog.themGhiNhoDialog" />
+        <activity android:name=".Dialog.themBaiTapDialog" />
+        <activity
+            android:name=".Dialog.ChinhSuaGhiNho"
+            android:theme="@style/MyCustomDialog" />
+        <activity android:name=".Dialog.ChinhSuaGhiNhoDetail" />
+        <activity
+            android:name=".Dialog.GhiNhoDetail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dialog.ChinhSuaBaiTap"
+            android:theme="@style/MyCustomDialog" />
+        <activity android:name=".Dialog.ChinhSuaBaiTapDetail" />
+        <activity android:name=".Dialog.BaiTapDetail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service android:name=".Alarm.MyAlarmService"
+            android:enabled="true" android:exported="true" />
+        <receiver android:name=".Alarm.MyReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+        </receiver>
+    </application>
+
+</manifest>

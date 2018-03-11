@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lichHocCardView"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/imageDeadline"
+            android:layout_width="102dp"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/tvCaHoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="15dp"
+                android:text="ca hoc"
+                android:textColor="@color/textcardviewTrang"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvThoiGian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCaHoc"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textcardviewTrang"
+                android:textSize="@dimen/desCardView" />
+
+            <TextView
+                android:id="@+id/tvPhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvThoiGian"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textcardviewTrang"
+                android:textSize="@dimen/desCardView"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageDeadline"
+            android:layout_toRightOf="@+id/imageDeadline"
+            android:background="@color/textcardviewTrang"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textcardviewXam"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/subtitleCardView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNgay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/textcardviewDen"
+                android:textSize="@dimen/desCardView" />
+
+            <TextView
+                android:id="@+id/tvlop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/textcardviewDen"
+                android:textSize="@dimen/desCardView" />
+
+            <TextView
+                android:id="@+id/tvGiangVien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/textcardviewDen"
+                android:textSize="@dimen/desCardView" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
